@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+{% block title %}Home - Quantum Capital Partners{% endblock %}
+{% block content %}
+<style>
+    .hero-bg {
+        background: linear-gradient(rgba(34, 49, 63, 0.7), rgba(34, 49, 63, 0.7)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+        border-radius: 1rem;
+        margin-top: 2rem;
+    }
+
+    .hero-content {
+        color: #fff;
+        padding: 3rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+</style>
+<div class="container">
+    <div class="hero-bg">
+        <div class="hero-content">
+            <h1>Quantum Capital Partners</h1>
+            <p>Professional investment management for sophisticated investors. Start your journey with a modern hedge
+                fund platform that puts transparency and performance first.</p>
+            <a class="btn btn-warning btn-lg fw-bold shadow" href="/company">What We Do &rarr;</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
