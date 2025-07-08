@@ -26,14 +26,36 @@
         font-size: 1.2rem;
         margin-bottom: 2rem;
     }
+
+    .invest-card-img {
+        height: 220px;
+        object-fit: cover;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
 </style>
 <div class="container">
-    <div class="hero-bg">
+    <div class="hero-bg animate__animated animate__fadeIn">
         <div class="hero-content">
             <h1>Quantum Capital Partners</h1>
             <p>Professional investment management for sophisticated investors. Start your journey with a modern hedge
                 fund platform that puts transparency and performance first.</p>
             <a class="btn btn-warning btn-lg fw-bold shadow" href="/company">What We Do &rarr;</a>
+        </div>
+    </div>
+    <!-- Start Investing Card Section -->
+    <div class="row justify-content-center my-5" data-aos="fade-up">
+        <div class="col-md-7 col-lg-6">
+            <div class="card shadow-lg border-0 animate__animated animate__fadeInUp">
+                <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3fd9?auto=format&fit=crop&w=800&q=80"
+                    class="invest-card-img w-100" alt="Start Investing">
+                <div class="card-body text-center">
+                    <h3 class="mb-3">Start Investing Now</h3>
+                    <p class="mb-4">Take the first step toward growing your wealth. Join Quantum Capital Partners and
+                        invest with confidence.</p>
+                    <a href="/invest" class="btn btn-success btn-lg px-4">Start Investing</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

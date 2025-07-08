@@ -63,6 +63,10 @@ def dashboard():
 def company():
     return render_template('company.html')
 
+@app.route('/invest')
+def invest():
+    return render_template('invest.html')
+
 # --- Main ---
 if __name__ == '__main__':
     init_db()
