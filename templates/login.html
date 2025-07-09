@@ -1,22 +1,81 @@
 {% extends 'layout.html' %}
 {% block title %}Investor Login - Quantum Capital Partners{% endblock %}
 {% block content %}
-<div class="container mt-5" style="max-width: 400px;">
-    <div class="card shadow-sm">
-        <div class="card-body">
-            <h3 class="card-title mb-4">Investor Login</h3>
-            <form method="post">
-                <div class="mb-3">
-                    <label for="username" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="username" name="username" required autofocus>
+
+<!-- Live Stream Background Login Page -->
+<div class="relative min-h-screen flex items-center justify-center overflow-hidden">
+
+    <!-- EarthCam Live Feed Background -->
+    <div class="absolute inset-0 -z-10">
+        <iframe src="https://www.earthcam.com/cams/newyork/worldtradecenter/?cam=skyline_g" frameborder="0"
+            allowfullscreen class="w-full h-full" style="pointer-events: none;">
+        </iframe>
+    </div>
+
+    <!-- Gradient overlay for readability -->
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-900/40 via-black/30 to-blue-800/40 z-0"></div>
+
+    <!-- Centered Login Card -->
+    <div class="relative z-10 w-full max-w-md px-4">
+        <div class="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-white/20">
+            <!-- Logo/Brand -->
+            <div class="text-center mb-6">
+                <div class="w-16 h-16 bg-blue-700 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
+                        <path fill-rule="evenodd"
+                            d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"
+                            clip-rule="evenodd" />
+                    </svg>
                 </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" name="password" required>
+                <h3 class="text-2xl font-bold text-blue-900 mb-2">Investor Login</h3>
+                <p class="text-gray-600 text-sm">Quantum Capital Partners</p>
+            </div>
+
+            <!-- Login Form -->
+            <form method="post" class="w-full space-y-6">
+                <div>
+                    <label for="username" class="block text-gray-700 font-semibold mb-2">Username</label>
+                    <input type="text"
+                        class="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 bg-white/80 backdrop-blur-sm"
+                        id="username" name="username" required autofocus placeholder="Enter your username">
                 </div>
-                <button type="submit" class="btn btn-primary w-100">Login</button>
+
+                <div>
+                    <label for="password" class="block text-gray-700 font-semibold mb-2">Password</label>
+                    <input type="password"
+                        class="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 bg-white/80 backdrop-blur-sm"
+                        id="password" name="password" required placeholder="Enter your password">
+                </div>
+
+                <div class="flex items-center justify-between text-sm">
+                    <label class="flex items-center">
+                        <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                        <span class="ml-2 text-gray-600">Remember me</span>
+                    </label>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 transition-colors">Forgot password?</a>
+                </div>
+
+                <button type="submit"
+                    class="w-full bg-gradient-to-r from-blue-700 to-blue-800 hover:from-blue-800 hover:to-blue-900 text-white font-bold py-3 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg">
+                    Login
+                </button>
             </form>
         </div>
     </div>
 </div>
+
+<style>
+    /* Enhance the login form with subtle animations */
+    .form-input:focus {
+        transform: scale(1.02);
+    }
+
+    /* Custom backdrop blur for better browser compatibility */
+    .backdrop-blur-sm {
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+    }
+</style>
+
 {% endblock %}
