@@ -1,39 +1,39 @@
 {% extends 'layout.html' %}
 {% block title %}Investor Login - Quantum Capital Partners{% endblock %}
 {% block content %}
-<div class="min-h-screen flex items-center justify-center bg-blue-900">
+<div class="min-h-screen flex items-center justify-center bg-black">
     <!-- Vertical Investor Portal Label -->
     <div class="hidden md:flex flex-col items-center justify-center mr-12">
-        <span class="text-blue-200 text-4xl font-light tracking-widest"
+        <span class="text-red-600 text-4xl font-light tracking-widest"
             style="writing-mode: vertical-rl; transform: rotate(180deg); letter-spacing: 0.2em;">Investor Portal</span>
     </div>
     <!-- Login Card -->
     <div class="w-full max-w-md bg-white rounded-2xl shadow-2xl p-10 flex flex-col items-center">
-        <h2 class="text-2xl font-bold text-blue-900 mb-2">Investor Login</h2>
-        <p class="text-gray-600 mb-6 text-center">Sign in to access your Quantum Capital Partners dashboard.</p>
+        <h2 class="text-2xl font-bold text-red-600 mb-2">Investor Login</h2>
+        <p class="text-gray-700 mb-6 text-center">Sign in to access your Quantum Capital Partners dashboard.</p>
         <form method="post" class="w-full space-y-6">
             <div>
-                <label for="username" class="block text-gray-700 font-semibold mb-2">Username</label>
+                <label for="username" class="block text-black font-semibold mb-2">Username</label>
                 <input type="text"
-                    class="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200"
+                    class="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-all duration-200"
                     id="username" name="username" required autofocus placeholder="Enter your username">
             </div>
             <div>
-                <label for="password" class="block text-gray-700 font-semibold mb-2">Password</label>
+                <label for="password" class="block text-black font-semibold mb-2">Password</label>
                 <input type="password"
-                    class="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200"
+                    class="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-all duration-200"
                     id="password" name="password" required placeholder="Enter your password">
             </div>
             <div class="flex items-center justify-between text-sm">
                 <label class="flex items-center">
                     <input type="checkbox" name="remember"
-                        class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
-                    <span class="ml-2 text-gray-600">Remember me</span>
+                        class="rounded border-gray-300 text-red-600 focus:ring-red-500">
+                    <span class="ml-2 text-gray-700">Remember me</span>
                 </label>
-                <a href="#" class="text-blue-600 hover:text-blue-800 transition-colors">Forgot password?</a>
+                <a href="#" class="text-red-600 hover:text-red-800 transition-colors">Forgot password?</a>
             </div>
             <button type="submit"
-                class="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg">Login</button>
+                class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg">Login</button>
         </form>
     </div>
 </div>

@@ -9,23 +9,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 
 <body>
-    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-200 shadow-md">
+    <nav class="sticky top-0 z-50 bg-white border-b border-red-600 shadow-md">
         <div class="container mx-auto flex items-center justify-between py-3 px-4">
-            <a class="font-extrabold text-2xl text-indigo-700 tracking-tight" href="/">Quantum Capital</a>
+            <a class="font-extrabold text-2xl text-red-600 tracking-tight" href="/">Quantum Capital</a>
             <div class="hidden md:flex space-x-8 items-center">
-                <a class="text-gray-700 hover:text-indigo-600 font-semibold transition" href="/">Home</a>
-                <a class="text-gray-700 hover:text-indigo-600 font-semibold transition" href="/invest">Invest</a>
+                <a class="text-black hover:text-red-600 font-semibold transition" href="/">Home</a>
+                <a class="text-black hover:text-red-600 font-semibold transition" href="/invest">Invest</a>
                 {% if session.get('user') %}
-                <a class="text-gray-700 hover:text-indigo-600 font-semibold transition" href="/dashboard">Dashboard</a>
-                <a class="text-gray-700 hover:text-red-500 font-semibold transition" href="/logout">Logout</a>
+                <a class="text-black hover:text-red-600 font-semibold transition" href="/dashboard">Dashboard</a>
+                <a class="text-black hover:text-red-700 font-semibold transition" href="/logout">Logout</a>
                 {% else %}
-                <a class="text-gray-700 hover:text-indigo-600 font-semibold transition" href="/login">Investor Login</a>
+                <a class="text-black hover:text-red-600 font-semibold transition" href="/login">Investor Login</a>
                 {% endif %}
             </div>
-            <button class="md:hidden flex items-center px-3 py-2 border rounded text-indigo-700 border-indigo-700"
+            <button class="md:hidden flex items-center px-3 py-2 border rounded text-red-600 border-red-600"
                 onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
                 <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
@@ -35,14 +36,13 @@
             </button>
         </div>
         <div class="md:hidden hidden px-4 pb-4" id="mobile-menu">
-            <a class="block py-2 text-gray-700 hover:text-indigo-600 font-semibold transition" href="/">Home</a>
-            <a class="block py-2 text-gray-700 hover:text-indigo-600 font-semibold transition" href="/invest">Invest</a>
+            <a class="block py-2 text-black hover:text-red-600 font-semibold transition" href="/">Home</a>
+            <a class="block py-2 text-black hover:text-red-600 font-semibold transition" href="/invest">Invest</a>
             {% if session.get('user') %}
-            <a class="block py-2 text-gray-700 hover:text-indigo-600 font-semibold transition"
-                href="/dashboard">Dashboard</a>
-            <a class="block py-2 text-gray-700 hover:text-red-500 font-semibold transition" href="/logout">Logout</a>
+            <a class="block py-2 text-black hover:text-red-600 font-semibold transition" href="/dashboard">Dashboard</a>
+            <a class="block py-2 text-black hover:text-red-700 font-semibold transition" href="/logout">Logout</a>
             {% else %}
-            <a class="block py-2 text-gray-700 hover:text-indigo-600 font-semibold transition" href="/login">Investor
+            <a class="block py-2 text-black hover:text-red-600 font-semibold transition" href="/login">Investor
                 Login</a>
             {% endif %}
         </div>
@@ -66,7 +66,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      S.i    </script>
+        S.i    </script>
 </body>
 
 </html>
