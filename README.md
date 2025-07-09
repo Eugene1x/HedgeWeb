@@ -208,3 +208,7 @@ This is a demonstration website for a fictional hedge fund. All performance data
 
 **Quantum Capital Partners** - Professional Investment Management
 *SEC Registered Investment Advisor* 
+
+## Static Files
+
+Create a `static` directory in the project root to store static assets such as JavaScript, CSS, and images. Place any custom scripts (e.g., `particles.js`) in `static/js/`. 

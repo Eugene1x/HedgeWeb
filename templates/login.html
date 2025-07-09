@@ -1,7 +1,9 @@
 {% extends 'layout.html' %}
 {% block title %}Investor Login - Quantum Capital Partners{% endblock %}
 {% block content %}
-<div class="min-h-screen flex items-center justify-center bg-black">
+<!-- Particles.js Background -->
+<div id="particles-js" class="fixed inset-0 z-0"></div>
+<div class="min-h-screen flex items-center justify-center bg-black relative z-10">
     <!-- Vertical Investor Portal Label -->
     <div class="hidden md:flex flex-col items-center justify-center mr-12">
         <span class="text-red-600 text-4xl font-light tracking-widest"
@@ -37,4 +39,30 @@
         </form>
     </div>
 </div>
+<script>
+    particlesJS('particles-js', {
+        "particles": {
+            "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+            "color": { "value": "#fff" },
+            "shape": { "type": "circle" },
+            "opacity": { "value": 0.7, "random": true },
+            "size": { "value": 2.5, "random": true },
+            "line_linked": { "enable": true, "distance": 150, "color": "#fff", "opacity": 0.2, "width": 1 },
+            "move": { "enable": true, "speed": 1.2, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false } }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": { "enable": true, "mode": "repulse" },
+                "onclick": { "enable": true, "mode": "push" },
+                "resize": true
+            },
+            "modes": {
+                "repulse": { "distance": 100, "duration": 0.4 },
+                "push": { "particles_nb": 4 }
+            }
+        },
+        "retina_detect": true
+    });
+</script>
 {% endblock %}

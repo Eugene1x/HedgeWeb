@@ -3,20 +3,21 @@
 {% block content %}
 <!-- Hero Section: Split Layout -->
 <div class="container mx-auto mt-10 mb-16">
-    <div class="bg-black rounded-xl shadow-lg flex flex-col md:flex-row overflow-hidden">
+    <div class="bg-[#121212] rounded-xl shadow-lg flex flex-col md:flex-row overflow-hidden">
         <!-- Left: Text -->
         <div class="md:w-1/2 p-10 flex flex-col justify-center animate-fade-in">
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-red-600">Forecasting the Future: A Modern Economics
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-[#00FFFF]">Forecasting the Future: A Modern
+                Economics
                 Challenge</h1>
             <p class="text-lg mb-6 text-white">Dive into the evolving global economy and see how Quantum Capital
                 Partners is transforming investment for the next era. Discover our unique approach to modern asset
                 management and how you can be a part of it.</p>
             <a href="#what-we-do"
-                class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300">Learn
+                class="inline-block bg-[#00FFFF] hover:bg-white text-[#121212] font-bold py-3 px-8 rounded-full shadow-lg transition duration-300">Learn
                 More</a>
         </div>
         <!-- Right: Image/Slider -->
-        <div class="md:w-1/2 flex items-center justify-center bg-gray-900 animate-slide-in-up">
+        <div class="md:w-1/2 flex items-center justify-center bg-[#2C2C2C] animate-slide-in-up">
             <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
                 alt="Forecasting the Future" class="object-cover w-full h-80 md:h-full">
         </div>
@@ -25,63 +26,77 @@
 
 <!-- What We Do Section -->
 <div id="what-we-do" class="container mx-auto mb-16">
-    <div class="bg-white rounded-xl shadow p-10 text-center">
-        <h2 class="text-3xl font-bold mb-4 text-red-600">What We Do</h2>
-        <p class="text-lg mb-4 text-black">Quantum Capital Partners is a premier asset management firm, focused on
+    <div class="bg-[#2C2C2C] rounded-xl shadow p-10 text-center">
+        <h2 class="text-3xl font-bold mb-4 text-[#00FFFF]">What We Do</h2>
+        <p class="text-lg mb-4 text-white">Quantum Capital Partners is a premier asset management firm, focused on
             delivering unique insight and partnership for the most sophisticated global institutional investors.</p>
-        <a href="#explore" class="inline-block mt-2 text-red-600 font-semibold hover:underline">+ Read More</a>
+        <a href="#explore"
+            class="inline-block mt-2 bg-[#00FFFF] text-[#121212] font-semibold py-2 px-6 rounded-full border-2 border-[#121212] hover:bg-white hover:text-[#00FFFF] transition">+
+            Read More</a>
     </div>
 </div>
 
 <!-- Latest News Grid -->
 <div class="container mx-auto mb-16">
-    <h2 class="text-2xl font-bold mb-8 text-center">Latest from Quantum Capital</h2>
+    <h2 class="text-2xl font-bold mb-8 text-center text-[#00FFFF]">Latest from Quantum Capital</h2>
     <div class="grid md:grid-cols-2 gap-8">
         <!-- News Card 1 -->
-        <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col md:flex-row items-center gap-6">
-            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Steve Secundo"
-                class="w-20 h-20 rounded-full object-cover">
+        <div class="bg-[#2C2C2C] rounded-xl shadow-lg p-6 flex flex-col md:flex-row items-center gap-6">
+            <div class="relative">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Steve Secundo"
+                    class="w-20 h-20 rounded-full object-cover border-2 border-[#00FFFF]">
+                <div class="absolute inset-0 bg-[#121212] opacity-40 rounded-full"></div>
+            </div>
             <div>
-                <div class="text-xs font-bold text-gray-500 mb-1">PEOPLE</div>
-                <h3 class="font-bold text-lg mb-1">Steve Secundo Recognized as a Rising Star</h3>
-                <div class="text-xs text-gray-400 mb-1">May 29, 2025</div>
-                <p class="text-gray-700 text-sm">Steve Secundo has been named to Institutional Investor's 2025 Hedge
+                <div class="text-xs font-bold text-[#00FFFF] mb-1">PEOPLE</div>
+                <h3 class="font-bold text-lg mb-1 text-white">Steve Secundo Recognized as a Rising Star</h3>
+                <div class="text-xs text-[#00FFFF] mb-1">May 29, 2025</div>
+                <p class="text-white text-sm">Steve Secundo has been named to Institutional Investor's 2025 Hedge
                     Fund Rising Stars list, recognizing trailblazers in the hedge fund industry.</p>
             </div>
         </div>
         <!-- News Card 2 -->
-        <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col md:flex-row items-center gap-6">
-            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Karen Karniol-Tambour"
-                class="w-20 h-20 rounded-full object-cover">
+        <div class="bg-[#121212] rounded-xl shadow-lg p-6 flex flex-col md:flex-row items-center gap-6">
+            <div class="relative">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Karen Karniol-Tambour"
+                    class="w-20 h-20 rounded-full object-cover border-2 border-[#00FFFF]">
+                <div class="absolute inset-0 bg-[#2C2C2C] opacity-40 rounded-full"></div>
+            </div>
             <div>
-                <div class="text-xs font-bold text-gray-500 mb-1">RESEARCH & INSIGHTS</div>
-                <h3 class="font-bold text-lg mb-1">Our Outlook and the Threats We See to Portfolios</h3>
-                <div class="text-xs text-gray-400 mb-1">April 21, 2025</div>
-                <p class="text-gray-700 text-sm">Co-CIO Karen Karniol-Tambour describes how we are processing today's
+                <div class="text-xs font-bold text-[#00FFFF] mb-1">RESEARCH & INSIGHTS</div>
+                <h3 class="font-bold text-lg mb-1 text-white">Our Outlook and the Threats We See to Portfolios</h3>
+                <div class="text-xs text-white mb-1">April 21, 2025</div>
+                <p class="text-white text-sm">Co-CIO Karen Karniol-Tambour describes how we are processing today's
                     radically different economic and market environment.</p>
             </div>
         </div>
         <!-- News Card 3 -->
-        <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col md:flex-row items-center gap-6">
-            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Nir Bar Dea"
-                class="w-20 h-20 rounded-full object-cover">
+        <div class="bg-[#2C2C2C] rounded-xl shadow-lg p-6 flex flex-col md:flex-row items-center gap-6">
+            <div class="relative">
+                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Nir Bar Dea"
+                    class="w-20 h-20 rounded-full object-cover border-2 border-[#00FFFF]">
+                <div class="absolute inset-0 bg-[#121212] opacity-40 rounded-full"></div>
+            </div>
             <div>
-                <div class="text-xs font-bold text-gray-500 mb-1">IN THE NEWS</div>
-                <h3 class="font-bold text-lg mb-1">CEO Nir Bar Dea Discusses Global Paradigm Shifts</h3>
-                <div class="text-xs text-gray-400 mb-1">March 10, 2025</div>
-                <p class="text-gray-700 text-sm">Nir Bar Dea joins Bloomberg Invest to discuss global paradigm shifts
+                <div class="text-xs font-bold text-[#00FFFF] mb-1">IN THE NEWS</div>
+                <h3 class="font-bold text-lg mb-1 text-white">CEO Nir Bar Dea Discusses Global Paradigm Shifts</h3>
+                <div class="text-xs text-[#00FFFF] mb-1">March 10, 2025</div>
+                <p class="text-white text-sm">Nir Bar Dea joins Bloomberg Invest to discuss global paradigm shifts
                     and Quantum Capital's playbook.</p>
             </div>
         </div>
         <!-- News Card 4 -->
-        <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col md:flex-row items-center gap-6">
-            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Co-CIO"
-                class="w-20 h-20 rounded-full object-cover">
+        <div class="bg-[#121212] rounded-xl shadow-lg p-6 flex flex-col md:flex-row items-center gap-6">
+            <div class="relative">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Co-CIO"
+                    class="w-20 h-20 rounded-full object-cover border-2 border-[#00FFFF]">
+                <div class="absolute inset-0 bg-[#2C2C2C] opacity-40 rounded-full"></div>
+            </div>
             <div>
-                <div class="text-xs font-bold text-gray-500 mb-1">PEOPLE</div>
-                <h3 class="font-bold text-lg mb-1">Co-CIO Recognized on Barron's Most Influential List</h3>
-                <div class="text-xs text-gray-400 mb-1">March 14, 2025</div>
-                <p class="text-gray-700 text-sm">For the sixth consecutive year, our Co-CIO has been recognized for
+                <div class="text-xs font-bold text-[#00FFFF] mb-1">PEOPLE</div>
+                <h3 class="font-bold text-lg mb-1 text-white">Co-CIO Recognized on Barron's Most Influential List</h3>
+                <div class="text-xs text-white mb-1">March 14, 2025</div>
+                <p class="text-white text-sm">For the sixth consecutive year, our Co-CIO has been recognized for
                     expertise, influence, and leadership in the financial services industry.</p>
             </div>
         </div>
@@ -90,70 +105,70 @@
 
 <!-- Explore Section -->
 <div id="explore" class="container mx-auto mb-20">
-    <h2 class="text-2xl font-bold mb-8 text-center">Explore Quantum Capital</h2>
+    <h2 class="text-2xl font-bold mb-8 text-center text-[#00FFFF]">Explore Quantum Capital</h2>
     <div class="grid md:grid-cols-2 gap-8">
-        <a href="#" class="relative group block rounded-xl overflow-hidden shadow-lg">
+        <a href="#" class="relative group block rounded-xl overflow-hidden shadow-lg bg-[#2C2C2C]">
             <img src="https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?auto=format&fit=crop&w=800&q=80"
-                class="w-full h-56 object-cover group-hover:scale-105 group-hover:brightness-75 transition duration-300"
+                class="w-full h-56 object-cover group-hover:scale-105 group-hover:brightness-75 transition duration-300 opacity-80"
                 alt="Research & Insights">
             <div class="absolute bottom-0 left-0 p-6">
-                <div class="text-white text-lg font-bold drop-shadow">RESEARCH & INSIGHTS</div>
+                <div class="text-[#00FFFF] text-lg font-bold drop-shadow">RESEARCH & INSIGHTS</div>
                 <div class="text-white text-sm drop-shadow">Access a collection of our economic insights</div>
             </div>
             <div class="absolute right-4 bottom-4 opacity-0 group-hover:opacity-100 transition duration-300">
-                <span class="inline-block bg-white/80 rounded-full p-2"><svg xmlns="http://www.w3.org/2000/svg"
-                        width="24" height="24" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round"
+                <span class="inline-block bg-[#00FFFF]/80 rounded-full p-2"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" fill="none" stroke="#121212" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="feather feather-arrow-right">
                         <line x1="5" y1="12" x2="19" y2="12" />
                         <polyline points="12 5 19 12 12 19" />
                     </svg></span>
             </div>
         </a>
-        <a href="#" class="relative group block rounded-xl overflow-hidden shadow-lg">
+        <a href="#" class="relative group block rounded-xl overflow-hidden shadow-lg bg-[#2C2C2C]">
             <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80"
-                class="w-full h-56 object-cover group-hover:scale-105 group-hover:brightness-75 transition duration-300"
+                class="w-full h-56 object-cover group-hover:scale-105 group-hover:brightness-75 transition duration-300 opacity-80"
                 alt="Culture">
             <div class="absolute bottom-0 left-0 p-6">
-                <div class="text-white text-lg font-bold drop-shadow">CULTURE</div>
+                <div class="text-[#00FFFF] text-lg font-bold drop-shadow">CULTURE</div>
                 <div class="text-white text-sm drop-shadow">Learn about our pioneering workplace</div>
             </div>
             <div class="absolute right-4 bottom-4 opacity-0 group-hover:opacity-100 transition duration-300">
-                <span class="inline-block bg-white/80 rounded-full p-2"><svg xmlns="http://www.w3.org/2000/svg"
-                        width="24" height="24" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round"
+                <span class="inline-block bg-[#00FFFF]/80 rounded-full p-2"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" fill="none" stroke="#121212" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="feather feather-arrow-right">
                         <line x1="5" y1="12" x2="19" y2="12" />
                         <polyline points="12 5 19 12 12 19" />
                     </svg></span>
             </div>
         </a>
-        <a href="#" class="relative group block rounded-xl overflow-hidden shadow-lg">
+        <a href="#" class="relative group block rounded-xl overflow-hidden shadow-lg bg-[#2C2C2C]">
             <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80"
-                class="w-full h-56 object-cover group-hover:scale-105 group-hover:brightness-75 transition duration-300"
+                class="w-full h-56 object-cover group-hover:scale-105 group-hover:brightness-75 transition duration-300 opacity-80"
                 alt="People">
             <div class="absolute bottom-0 left-0 p-6">
-                <div class="text-white text-lg font-bold drop-shadow">PEOPLE</div>
+                <div class="text-[#00FFFF] text-lg font-bold drop-shadow">PEOPLE</div>
                 <div class="text-white text-sm drop-shadow">Meet our community of independent thinkers</div>
             </div>
             <div class="absolute right-4 bottom-4 opacity-0 group-hover:opacity-100 transition duration-300">
-                <span class="inline-block bg-white/80 rounded-full p-2"><svg xmlns="http://www.w3.org/2000/svg"
-                        width="24" height="24" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round"
+                <span class="inline-block bg-[#00FFFF]/80 rounded-full p-2"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" fill="none" stroke="#121212" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="feather feather-arrow-right">
                         <line x1="5" y1="12" x2="19" y2="12" />
                         <polyline points="12 5 19 12 12 19" />
                     </svg></span>
             </div>
         </a>
-        <a href="#" class="relative group block rounded-xl overflow-hidden shadow-lg">
+        <a href="#" class="relative group block rounded-xl overflow-hidden shadow-lg bg-[#2C2C2C]">
             <img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?auto=format&fit=crop&w=800&q=80"
-                class="w-full h-56 object-cover group-hover:scale-105 group-hover:brightness-75 transition duration-300"
+                class="w-full h-56 object-cover group-hover:scale-105 group-hover:brightness-75 transition duration-300 opacity-80"
                 alt="Working at Quantum">
             <div class="absolute bottom-0 left-0 p-6">
-                <div class="text-white text-lg font-bold drop-shadow">WORKING AT QUANTUM</div>
+                <div class="text-[#00FFFF] text-lg font-bold drop-shadow">WORKING AT QUANTUM</div>
                 <div class="text-white text-sm drop-shadow">Explore career opportunities</div>
             </div>
             <div class="absolute right-4 bottom-4 opacity-0 group-hover:opacity-100 transition duration-300">
-                <span class="inline-block bg-white/80 rounded-full p-2"><svg xmlns="http://www.w3.org/2000/svg"
-                        width="24" height="24" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round"
+                <span class="inline-block bg-[#00FFFF]/80 rounded-full p-2"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" fill="none" stroke="#121212" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="feather feather-arrow-right">
                         <line x1="5" y1="12" x2="19" y2="12" />
                         <polyline points="12 5 19 12 12 19" />
@@ -164,9 +179,9 @@
 </div>
 
 <!-- Millennium-Style Stats + World Map Section -->
-<div class="w-full bg-blue-900 py-16 flex flex-col md:flex-row items-center justify-center gap-12 mb-16">
+<div class="w-full bg-[#121212] py-16 flex flex-col md:flex-row items-center justify-center gap-12 mb-16">
     <!-- Stats -->
-    <div class="flex flex-col gap-6 text-left text-blue-100 md:pl-16">
+    <div class="flex flex-col gap-6 text-left text-white md:pl-16">
         <div>
             <span class="text-4xl md:text-5xl font-bold">140+</span>
             <div class="uppercase tracking-widest text-sm mt-1">Employee Locations</div>
@@ -179,8 +194,8 @@
             <span class="text-4xl md:text-5xl font-bold">13M+</span>
             <div class="uppercase tracking-widest text-sm mt-1">Daily Average Trades</div>
         </div>
-        <div class="border-l-4 border-cyan-400 pl-4 mt-2">
-            <span class="text-3xl md:text-4xl font-bold text-cyan-300">45+</span>
+        <div class="border-l-4 border-[#00FFFF] pl-4 mt-2">
+            <span class="text-3xl md:text-4xl font-bold text-[#00FFFF]">45+</span>
             <div class="uppercase tracking-widest text-xs mt-1 text-white">Currencies Traded In</div>
         </div>
         <div>
@@ -191,48 +206,48 @@
     <!-- World Map SVG (placeholder) -->
     <div class="flex-1 flex items-center justify-center">
         <svg viewBox="0 0 800 400" class="w-[350px] md:w-[500px] h-auto">
-            <circle cx="200" cy="120" r="3" fill="#38bdf8" />
-            <circle cx="220" cy="140" r="2.5" fill="#38bdf8" />
-            <circle cx="400" cy="200" r="4" fill="#38bdf8" />
-            <circle cx="600" cy="180" r="3.5" fill="#38bdf8" />
-            <circle cx="700" cy="100" r="2.5" fill="#38bdf8" />
-            <circle cx="500" cy="300" r="3" fill="#38bdf8" />
-            <circle cx="300" cy="250" r="2.5" fill="#38bdf8" />
-            <circle cx="650" cy="320" r="2" fill="#38bdf8" />
-            <circle cx="100" cy="200" r="2" fill="#38bdf8" />
-            <circle cx="350" cy="100" r="2.5" fill="#38bdf8" />
-            <circle cx="400" cy="350" r="2" fill="#38bdf8" />
-            <circle cx="750" cy="250" r="2.5" fill="#38bdf8" />
+            <circle cx="200" cy="120" r="3" fill="#00FFFF" />
+            <circle cx="220" cy="140" r="2.5" fill="#00FFFF" />
+            <circle cx="400" cy="200" r="4" fill="#00FFFF" />
+            <circle cx="600" cy="180" r="3.5" fill="#00FFFF" />
+            <circle cx="700" cy="100" r="2.5" fill="#00FFFF" />
+            <circle cx="500" cy="300" r="3" fill="#00FFFF" />
+            <circle cx="300" cy="250" r="2.5" fill="#00FFFF" />
+            <circle cx="650" cy="320" r="2" fill="#00FFFF" />
+            <circle cx="100" cy="200" r="2" fill="#00FFFF" />
+            <circle cx="350" cy="100" r="2.5" fill="#00FFFF" />
+            <circle cx="400" cy="350" r="2" fill="#00FFFF" />
+            <circle cx="750" cy="250" r="2.5" fill="#00FFFF" />
             <!-- Add more dots for effect -->
         </svg>
     </div>
 </div>
 
-<!-- Millennium-Style Blue Feature Cards Section -->
-<div class="w-full bg-blue-50 py-20 mb-16">
+<!-- Millennium-Style Feature Cards Section -->
+<div class="w-full bg-[#2C2C2C] py-20 mb-16">
     <div class="container mx-auto">
-        <h2 class="text-4xl font-bold text-blue-700 mb-10">Entrepreneurial investing at scale</h2>
-        <p class="text-blue-700 mb-12 max-w-2xl">Quantum Capital Partners empowers talented professionals with
+        <h2 class="text-4xl font-bold text-[#00FFFF] mb-10">Entrepreneurial investing at scale</h2>
+        <p class="text-white mb-12 max-w-2xl">Quantum Capital Partners empowers talented professionals with
             sophisticated expertise, resources, and technology to pursue high-quality returns for investors.</p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div
-                class="bg-blue-600 text-white rounded-2xl p-8 text-xl font-light shadow-lg relative hover:scale-105 transition-transform duration-300">
-                <span class="absolute top-4 right-6 text-2xl font-bold">+</span>
+                class="bg-[#121212] text-white rounded-2xl p-8 text-xl font-light shadow-lg relative hover:scale-105 transition-transform duration-300 border-2 border-[#00FFFF]">
+                <span class="absolute top-4 right-6 text-2xl font-bold text-[#00FFFF]">+</span>
                 Committed to consistency and stability
             </div>
             <div
-                class="bg-blue-600 text-white rounded-2xl p-8 text-xl font-light shadow-lg relative hover:scale-105 transition-transform duration-300">
-                <span class="absolute top-4 right-6 text-2xl font-bold">+</span>
+                class="bg-[#2C2C2C] text-white rounded-2xl p-8 text-xl font-light shadow-lg relative hover:scale-105 transition-transform duration-300 border-2 border-[#00FFFF]">
+                <span class="absolute top-4 right-6 text-2xl font-bold text-[#00FFFF]">+</span>
                 Scale and reach
             </div>
             <div
-                class="bg-blue-600 text-white rounded-2xl p-8 text-xl font-light shadow-lg relative hover:scale-105 transition-transform duration-300">
-                <span class="absolute top-4 right-6 text-2xl font-bold">+</span>
+                class="bg-[#121212] text-white rounded-2xl p-8 text-xl font-light shadow-lg relative hover:scale-105 transition-transform duration-300 border-2 border-[#00FFFF]">
+                <span class="absolute top-4 right-6 text-2xl font-bold text-[#00FFFF]">+</span>
                 Specialization and expertise
             </div>
             <div
-                class="bg-blue-600 text-white rounded-2xl p-8 text-xl font-light shadow-lg relative hover:scale-105 transition-transform duration-300">
-                <span class="absolute top-4 right-6 text-2xl font-bold">+</span>
+                class="bg-[#2C2C2C] text-white rounded-2xl p-8 text-xl font-light shadow-lg relative hover:scale-105 transition-transform duration-300 border-2 border-[#00FFFF]">
+                <span class="absolute top-4 right-6 text-2xl font-bold text-[#00FFFF]">+</span>
                 Deep investment in technology
             </div>
         </div>
@@ -274,40 +289,40 @@
     }
 </style>
 <!-- Modern Footer -->
-<footer class="bg-gray-50 border-t border-gray-200 pt-12 pb-6 mt-16">
+<footer class="bg-[#121212] border-t border-[#00FFFF] pt-12 pb-6 mt-16">
     <div class="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
         <div class="flex-1">
             <div class="flex flex-wrap gap-8 mb-6">
                 <div>
-                    <div class="font-bold text-blue-700 mb-2">Approach</div>
-                    <a href="#" class="block text-blue-700 hover:underline">Overview</a>
+                    <div class="font-bold text-[#00FFFF] mb-2">Approach</div>
+                    <a href="#" class="block text-white hover:text-[#00FFFF] hover:underline">Overview</a>
                 </div>
                 <div>
-                    <div class="font-bold text-blue-700 mb-2">People</div>
-                    <a href="#" class="block text-blue-700 hover:underline">Leadership</a>
-                    <a href="#" class="block text-blue-700 hover:underline">Professionals</a>
+                    <div class="font-bold text-[#00FFFF] mb-2">People</div>
+                    <a href="#" class="block text-white hover:text-[#00FFFF] hover:underline">Leadership</a>
+                    <a href="#" class="block text-white hover:text-[#00FFFF] hover:underline">Professionals</a>
                 </div>
                 <div>
-                    <div class="font-bold text-blue-700 mb-2">Careers</div>
-                    <a href="#" class="block text-blue-700 hover:underline">Life at Quantum</a>
-                    <a href="#" class="block text-blue-700 hover:underline">Jobs</a>
+                    <div class="font-bold text-[#00FFFF] mb-2">Careers</div>
+                    <a href="#" class="block text-white hover:text-[#00FFFF] hover:underline">Life at Quantum</a>
+                    <a href="#" class="block text-white hover:text-[#00FFFF] hover:underline">Jobs</a>
                 </div>
                 <div>
-                    <div class="font-bold text-blue-700 mb-2">Investor Login</div>
-                    <a href="/login" class="block text-blue-700 hover:underline">Login</a>
+                    <div class="font-bold text-[#00FFFF] mb-2">Investor Login</div>
+                    <a href="/login" class="block text-white hover:text-[#00FFFF] hover:underline">Login</a>
                 </div>
             </div>
             <div class="flex gap-4 mb-4">
-                <a href="#" class="text-blue-700 text-2xl"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="text-blue-700 text-2xl"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="text-blue-700 text-2xl"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="text-[#00FFFF] text-2xl"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-[#00FFFF] text-2xl"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-[#00FFFF] text-2xl"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
         <div class="flex-1 flex justify-end items-end">
-            <span class="text-7xl font-extrabold text-blue-600 opacity-10 select-none">Quantum</span>
+            <span class="text-7xl font-extrabold text-[#00FFFF] opacity-10 select-none">Quantum</span>
         </div>
     </div>
-    <div class="container mx-auto text-xs text-gray-400 mt-4">© 2025 Quantum Capital Partners. All rights reserved.
+    <div class="container mx-auto text-xs text-white mt-4">© 2025 Quantum Capital Partners. All rights reserved.
     </div>
 </footer>
 {% endblock %}
